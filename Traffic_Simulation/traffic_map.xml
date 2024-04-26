@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<TrafficMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="trafficMap.xsd">
+    <Intersection id="I1"/>
+    <RoadSegment id="R1" startIntersectionId="I1" endIntersectionId="I2"/>
+    <Lane id="L1" roadSegmentId="R1" maxVehicles="10" direction="north"/>
+</TrafficMap>

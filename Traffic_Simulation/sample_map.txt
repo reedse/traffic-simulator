@@ -1,0 +1,9 @@
+Intersection,1
+Intersection,2
+Intersection,3
+RoadSegment,1,1,2
+RoadSegment,2,2,3
+Lane,1,1,10,North
+Lane,2,1,10,South
+Lane,3,2,15,East
+Lane,4,2,15,West

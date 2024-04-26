@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="TrafficMap">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Intersection" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:attribute name="id" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="RoadSegment" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:attribute name="id" type="xs:string" use="required"/>
+                        <xs:attribute name="startIntersectionId" type="xs:string" use="required"/>
+                        <xs:attribute name="endIntersectionId" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Lane" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:attribute name="id" type="xs:string" use="required"/>
+                        <xs:attribute name="roadSegmentId" type="xs:string" use="required"/>
+                        <xs:attribute name="maxVehicles" type="xs:int" use="required"/>
+                        <xs:attribute name="direction" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
